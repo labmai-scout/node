@@ -1,0 +1,33 @@
+admins:
+  title: 管理人员
+  perms:
+    admin:
+      name: admin
+      title: 系统管理员
+      description: |
+        拥有系统最高权限, 允许配置其他用户的权限和查看更新所有内容.
+    inventory_admin:
+      name: inventory_admin
+      title: 存量管控人员
+      description: |
+        负责维护存量限制要求, 用于有效管控化学品使用，可查看并了解化学品存量统计信息.
+    inventory_viewer:
+      name: inventory_viewer
+      title: 存量统计浏览人员
+      description: |
+        可查看并了解化学品存量统计信息.
+    bottle_retriever:
+      name: bottle_retriever
+      title: 废瓶回收负责人员
+      description: |
+        负责废瓶回收工作, 并审批回收申请.
+    order_admin:
+      name: order_admin
+      title: 订单统计分析人员
+      description: |
+        可查看并了解化学品采购统计信息.
+    waste_admin:
+      name: waste_admin
+      title: 废弃物处置管理者
+      description: |
+        负责废瓶回收工作, 并审批回收申请.

@@ -1,0 +1,22 @@
+<div class="modal fade" data-backdrop="static">
+    <div class="modal-dialog add-members-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title"><?=H(T('您将邀请以下用户加入到课题组:'))?></h4>
+            </div>
+            <div class="modal-body">
+                <ol>
+                <?php foreach ($emails as $email) { ?>
+                    <li><?=H($email)?></li>
+                <?php } ?>
+                </ol>
+            </div>
+            <div class="modal-footer text-right">
+                <input class="invite-back-to-edit btn btn-default" type="button" value="<?=H(T('修改'))?>" />
+                <input class="invite-confirm btn btn-primary" type="button" value="<?=H(T('确认'))?>" />
+            </div>
+        </div>
+    </div>
+</div>
+

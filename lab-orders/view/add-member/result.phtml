@@ -1,0 +1,45 @@
+<div class="modal fade" data-backdrop="static">
+    <div class="modal-dialog add-members-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title"><?=H(T('添加/邀请新成员'))?></h4>
+            </div>
+            <div class="modal-body">
+                <?php if (!empty($added)) { ?>
+                <div><?=H(T('已经将以下用户添加到课题组:'))?></div>
+                <ol>
+                <?php foreach ($added as $email) { ?>
+                    <li><?=H($email)?></li>
+                <?php } ?>
+                </ol>
+                <?php } ?>
+                <?php if (!empty($invited)) { ?>
+                <div><?=H(T('成功邀请了以下用户, 请提醒他们及时查收邮件:'))?></div>
+                <ol>
+                <?php foreach ($invited as $email) { ?>
+                    <li><?=H($email)?></li>
+                <?php } ?>
+                </ol>
+                <?php } ?>
+                <?php if (!empty($failed['invite'])) { ?>
+                <div><?=H(T('邀请以下用户失败:'))?></div>
+                <ol>
+                <?php foreach ($failed['invite'] as $email) { ?>
+                    <li><?=H($email)?></li>
+                <?php } ?>
+                </ol>
+                <?php } ?>
+                <?php if (!empty($failed['add'])) { ?>
+                <div><?=H(T('添加以下用户失败:'))?></div>
+                <ol>
+                <?php foreach ($failed['add'] as $email) { ?>
+                    <li><?=H($email)?></li>
+                <?php } ?>
+                </ol>
+                <?php } ?>
+            </div>
+        </div>
+    </div>
+</div>
+

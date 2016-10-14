@@ -1,0 +1,5 @@
+---
+gateway:
+  url: ${WEIXIN_GATEWAY_URL}
+  api_url: ${WEIXIN_GATEWAY_API}
+...

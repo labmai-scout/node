@@ -1,0 +1,12 @@
+{
+    "name": "存货领用",
+    "description": "存货领用",
+    "version": "0.1.2",
+    "dependencies": {
+        "gini": "*",
+        "debade": "*",
+        "lab-inventory": "*",
+        "gapper-auth-gateway": "*",
+        "node/base": "*"
+    }
+}

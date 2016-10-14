@@ -1,0 +1,24 @@
+---
+title: ${LAB_APP_TITLE}
+node: ${MALL_NODE}
+debade_secret: ${DEBADE_SECRET}
+rpc:
+  gateway:
+    url: ${GATEWAY_API}
+    client_id: ${GATEWAY_CLIENT_ID}
+    client_secret: ${GATEWAY_CLIENT_SECRET}
+  unitconv:
+    url: ${UNITCONV_API}
+  chemdb:
+    url: ${CHEMDB_API}
+  lab-waste-bottle:
+    url: ${LAB_WASTE_BOTTLES_API}
+    client_id: ${LAB_INVENTORY_GAPPER_ID}
+    client_secret: ${LAB_INVENTORY_GAPPER_SECRET}
+auto_install_apps_for_new_group:
+  - ${LAB_ORDERS_GAPPER_ID}
+  - ${LAB_INVENTORY_GAPPER_ID}
+  - ${LAB_GRANTS_GAPPER_ID}
+  - ${LAB_WASTE_GAPPER_ID}
+  - ${LAB_WASTE_BOTTLE_GAPPER_ID}
+...

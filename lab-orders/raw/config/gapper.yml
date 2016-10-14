@@ -1,0 +1,9 @@
+---
+rpc:
+  url: ${GAPPER_API}
+  client_id: ${LAB_ORDERS_GAPPER_ID}
+  client_secret: ${LAB_ORDERS_GAPPER_SECRET}
+
+server_home: ${GAPPER_HOME}
+home_app_client: ${GAPPER_HOME_APP_CLIENT}
+...

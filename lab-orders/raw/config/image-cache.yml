@@ -1,0 +1,17 @@
+server: ${IMAGE_CACHE_SERVER}
+client_id: ${IMAGE_CACHE_CLIENT_ID}
+client_secret: ${IMAGE_CACHE_CLIENT_SECRET}
+sizes:
+- 2x
+- 3x
+- "32"
+- "40"
+- "48"
+- "64"
+- "70"
+- "72"
+- "100"
+- "128"
+- "144"
+- "140"
+- "256"

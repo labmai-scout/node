@@ -1,0 +1,4 @@
+user.is_allowed_to[管理经费]:
+- callback:\Gini\Module\LabGrants::grantACL
+user.is_allowed_to[管理经费].*:
+- callback:\Gini\Module\LabGrants::grantACL

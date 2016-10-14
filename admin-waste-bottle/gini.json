@@ -1,0 +1,23 @@
+{
+    "name": "废瓶回收",
+    "description": "废瓶回收",
+    "version": "0.1.0",
+    "dependencies": {
+        "admin-waste-bottle": "*",
+        "gapper-auth-gateway": "*",
+        "node/base": "*"
+    },
+    "rurl": {
+        "img": "assets/img",
+        "css": "assets/css",
+        "js": "assets/js",
+        "*": "assets"
+    },
+    "composer": {
+        "require": {
+            "tecnickcom/tcpdf": "@stable",
+            "iamfat/wechat": "dev-master",
+            "phpoffice/phpexcel": "@stable"
+        }
+    }
+}

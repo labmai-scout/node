@@ -1,0 +1,17 @@
+{
+    "name": "首页",
+    "description": "首页",
+    "version": "0.1.1",
+    "dependencies": {
+        "gini": "*",
+        "gapper": "*",
+        "node/base": "*"
+    },
+    "rurl": {
+        "img": "assets/img",
+        "css": "assets/css",
+        "js": "assets/js",
+        "*": "assets"
+    }
+}
+

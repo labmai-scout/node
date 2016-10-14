@@ -1,0 +1,11 @@
+---
+rpc:
+  product:
+    url: ${MALL_HUB_PRODUCT_API}
+  order:
+    url: ${MALL_HUB_ORDER_API}
+
+client:
+  id: ${MALL_HUB_CLIENT_ID}
+  secret: ${MALL_HUB_CLIENT_SECRET}
+...

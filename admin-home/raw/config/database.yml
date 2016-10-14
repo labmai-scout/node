@@ -1,0 +1,6 @@
+---
+default:
+  dsn: mysql:dbname=${DB_PREFIX}_admin;host=${DB_HOST};port=${DB_PORT}
+  username: ${DB_USER}
+  password: ${DB_PASS}
+...

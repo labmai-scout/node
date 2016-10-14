@@ -1,0 +1,12 @@
+{
+    "name": "废弃物处置",
+    "description": "废弃物处置",
+    "version": "0.1.1",
+    "dependencies": {
+        "gini": "*",
+        "debade": "*",
+        "lab-waste": "*",
+        "gapper-auth-gateway": "*",
+        "node/base": "*"
+    }
+}

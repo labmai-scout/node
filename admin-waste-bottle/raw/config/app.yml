@@ -1,0 +1,19 @@
+title: ${ADMIN_APP_TITLE}
+
+node: ${MALL_NODE}
+
+rpc:
+  gateway:
+    url: ${GATEWAY_API}
+    client_id: ${GATEWAY_CLIENT_ID}
+    client_secret: ${GATEWAY_CLIENT_SECRET}
+  unitconv:
+    url: ${UNITCONV_API}
+  chemdb:
+    url: ${CHEMDB_API}
+  bottle:
+    url: ${LAB_WASTE_BOTTLES_API}
+    client_id: ${ADMIN_WASTE_BOTTLE_GAPPER_ID}
+    client_secret: ${ADMIN_WASTE_BOTTLE_GAPPER_SECRET}
+
+charing_series_limit: ${CHARTING_SERIES_LIMIT}

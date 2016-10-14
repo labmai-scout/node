@@ -1,0 +1,32 @@
+<div style="margin:40px auto; max-width:1200px;">
+    <h2 class="text-center" style="height:200px;line-height:200px;"><?= H(\Gini\Config::get('app.title'))?></h2>
+    <div class="row" style="margin:0">
+        <div class="col-xs-4 text-center" style="border-right:1px solid #ccc;padding:0">
+            <a href="go/manager" class="welcome-button">
+                <i class="fa fa-fw fa-4x fa-list"></i>
+                <h4>管理部门入口</h4>
+            </a>
+        </div>
+        <div class="col-xs-4 text-center" style="padding:0">
+            <a href="go/customer" class="welcome-button">
+                <i class="fa fa-fw fa-4x fa-shopping-cart"></i>
+                <h4>课题组入口</h4>
+            </a>
+        </div>
+        <div class="col-xs-4 text-center" style="border-left:1px solid #ccc;padding:0">
+            <a target="_blank" href="http://vendor.labmai.com/" class="welcome-button">
+                <i class="fa fa-fw fa-4x fa-group"></i>
+                <h4>供应商入口</h4>
+            </a>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="text-center text-danger">
+        <?= H(T('投诉和服务微信')) ?>
+        <br/>
+        <img src="assets/img/home-code.png" height="100px" width="100px">
+        <br/>
+        <i class="fa fa-fw fa-phone"></i> <?= H(T('400-843-6255')) ?>
+    </div>
+</footer>

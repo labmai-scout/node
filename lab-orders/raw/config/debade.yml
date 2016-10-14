@@ -1,0 +1,8 @@
+---
+queues:
+  order:
+    driver: Courier
+    options: 
+      dsn: 'tcp://172.17.0.1:3333'
+      queue: 'mall'
+...

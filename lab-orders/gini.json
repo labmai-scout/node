@@ -1,0 +1,25 @@
+{
+    "name": "材料采购",
+    "description": "材料采购",
+    "version": "0.1.3",
+    "dependencies": {
+        "gini": "*",
+        "mail": "*",
+        "lab-orders": ">=0.1.0",
+        "hazardous-control-orders": "*",
+        "chem-db-client": "*",
+        "gapper-auth-gateway": "*",
+        "node/base": "*"
+    },
+    "rurl": {
+        "img": "assets/img",
+        "css": "assets/css",
+        "js": "assets/js",
+        "*": "assets"
+    },
+    "composer": {
+        "require": {
+            "overtrue/pinyin": "2.5.0"
+        }
+    }
+}

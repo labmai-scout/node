@@ -1,0 +1,19 @@
+<div class="page-statement-heading">
+    <div class="row">
+    <div class="page-statement-heading-title col-xs-8">
+        <span><?=H(T('付款单 %statement', ['%statement'=> $statement->voucher]))?></span>
+        <span class="page-statement-heading-label"><?=H(\Gini\ORM\Payment\Statement::$status_title[$statement->status])?></span>
+        <?php if (!$statement->customized && !$statement->synced) { ?>
+            &nbsp;&nbsp;
+            <i class="fa fa-exclamation-circle fa-lg synced-warning"  data-toggle="tooltip" data-placement="top" title="<?= H(T('该付款单同步失败')) ?>"></i>
+        <?php } ?>
+    </div>
+    <?php if ($statement->status == \Gini\ORM\Payment\Statement::STATUS_TRANSFERRED ||  (!$statement->customized && $statement->status == \Gini\ORM\Payment\Statement::STATUS_PENDING_TRANSFER)) {
+
+        $config = \Gini\Config::get('payment.method');
+        $print = $config[$statement->method]['print'];
+        ?>
+    <div class="col-xs-4 text-right"><a target="_blank" href="<?= $print.$statement->id ?>" class="btn btn-inverse btn-print" style="background:#fff"><i class="fa fa-print"></i> <?=H(T('打印'))?></a></div>
+    <?php } ?>
+    </div>
+</div>

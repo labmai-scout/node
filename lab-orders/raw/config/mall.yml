@@ -1,0 +1,55 @@
+---
+rpc:
+  default:
+    url: ${MALL_HUB_DEFAULT_API}
+  node:
+    url: ${MALL_HUB_NODE_API}
+  vendor:
+    url: ${MALL_HUB_VENDOR_API}
+  product:
+    url: ${MALL_HUB_PRODUCT_API}
+  order:
+    url: ${MALL_HUB_ORDER_API}
+
+client:
+  id: ${MALL_HUB_CLIENT_ID}
+  secret: ${MALL_HUB_CLIENT_SECRET}
+
+node_id: ${MALL_NODE}
+
+product_privacy:
+  price:
+    default:  # product template
+      default: false  # user role
+      admin: true
+      customer: true
+      vendor: false
+    computer:
+      default: true
+
+product_category:
+  reagent:
+    title: 实验试剂
+    sub:
+      chem_reagent:
+        title: 化学试剂
+        template: chem_reagent
+      bio_reagent:
+        title: 生物试剂
+        template: bio_reagent
+  consumable:
+    title: 实验耗材
+    template: consumable
+  # servers:
+    # title: 服务
+    # template: servers
+  # equipment:
+  #   title: 仪器设备
+  #   sub:
+    #  small_device:
+    #    title: 小型仪器
+    #    template: small_device
+      # computer:
+      #   title: 电脑整机
+      #   template: computer
+...

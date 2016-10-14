@@ -1,0 +1,7 @@
+---
+rpc:
+  url: ${TAGDB_API}
+client:
+  id: ${ADMIN_ACCESS_GAPPER_ID}
+  secret: ${ADMIN_ACCESS_GAPPER_SECRET}
+...

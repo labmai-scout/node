@@ -1,0 +1,7 @@
+---
+rpc:
+    url: ${TAGDB_API}
+client:
+  id: ${LAB_INVENTORY_GAPPER_ID}
+  secret: ${LAB_INVENTORY_GAPPER_SECRET}
+...

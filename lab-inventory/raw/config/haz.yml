@@ -1,0 +1,5 @@
+---
+unit: g
+rpc:
+  url: ${CHEMDB_API}
+...

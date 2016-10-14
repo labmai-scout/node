@@ -1,0 +1,4 @@
+---
+rpc:
+  url: ${CHEMDB_API}
+...

@@ -1,0 +1,7 @@
+---
+title: ${HOME_APP_TITLE}
+clients:
+  manager: ${HOME_MANAGER_GAPPER_ID}
+  customer: ${HOME_CUSTOMER_GAPPER_ID}
+...
+

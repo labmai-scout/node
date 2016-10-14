@@ -1,0 +1,17 @@
+{
+    "name": "存量上限管理",
+    "description": "存量上限管理",
+    "version": "0.1.1",
+    "dependencies": {
+        "admin-chemical-limits": "*",
+        "gapper-auth-gateway": "*",
+        "node/base": "*"
+    },
+    "rurl": {
+        "img": "assets/img",
+        "css": "assets/css",
+        "js": "assets/js",
+        "*": "assets"
+    }
+}
+

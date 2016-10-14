@@ -1,0 +1,6 @@
+---
+inventory-expire-warn:
+    interval: 0 9 * * 1
+    command: inventory warn mail
+    comment: 每周一9点想用户发送本周将到期的存货
+...

@@ -1,0 +1,12 @@
+---
+locale: zh_CN
+postmaster:
+  email: ${POSTMASTER_EMAIL}
+  name: ${POSTMASTER_NAME}
+rurl_mod:
+  js:
+    query: '_v=$(VERSION)'
+session:
+  save_handler: ${SESSION_SAVE_HANDLER}
+  save_path: ${SESSION_SAVE_PATH}
+...

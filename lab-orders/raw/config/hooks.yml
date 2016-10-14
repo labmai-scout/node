@@ -1,0 +1,4 @@
+order.product_in_same_group:
+- callback:\Gini\Module\NodeLabOrders::productInSameGroup
+cart.get-protocol-content:
+- callback:\Gini\Module\LabOrders::getCartProtocol

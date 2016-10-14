@@ -1,0 +1,49 @@
+---
+title: ${LAB_APP_TITLE}
+service_phone: ${SERVICE_PHONE}
+home: ${LAB_ORDERS_URL}
+
+node: ${MALL_NODE}
+
+rpc:
+  gateway:
+    url: ${GATEWAY_API}
+    client_id: ${GATEWAY_CLIENT_ID}
+    client_secret: ${GATEWAY_CLIENT_SECRET}
+  unitconv:
+    url: ${UNITCONV_API}
+  chemdb:
+    url: ${CHEMDB_API}
+  lab-inventory:
+    url: ${LAB_INVENTORY_API}
+    client_id: ${LAB_INVENTORY_GAPPER_ID}
+    client_secret: ${LAB_INVENTORY_GAPPER_SECRET}
+  hazardous-control:
+    url: ${ADMIN_API}
+    client_id: ${LAB_ORDERS_GAPPER_ID}
+    client_secret: ${LAB_ORDERS_GAPPER_SECRET}
+  chemical-limits:
+    url: ${ADMIN_CHEMICAL_LIMITS_API}
+    client_id: ${LAB_ORDERS_GAPPER_ID}
+    client_secret: ${LAB_ORDERS_GAPPER_SECRET}
+
+debade_secret: ${DEBADE_SECRET}
+
+need_manager_approve: ${ORDER_REVIEW_REQUIRED}
+need_manager_approve_customized: ${CUSTOMIZED_ORDER_REVIEW_REQUIRED}
+
+associated:
+  inventory:
+    name: lab-inventory
+    client: ${LAB_INVENTORY_GAPPER_ID}
+  grants:
+    name: lab-grants
+    client: ${LAB_GRANTS_GAPPER_ID}
+
+auto_install_apps_for_new_group:
+  - ${LAB_ORDERS_GAPPER_ID}
+  - ${LAB_INVENTORY_GAPPER_ID}
+  - ${LAB_GRANTS_GAPPER_ID}
+  - ${LAB_WASTE_GAPPER_ID}
+  - ${LAB_WASTE_BOTTLE_GAPPER_ID}
+...

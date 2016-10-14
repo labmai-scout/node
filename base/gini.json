@@ -1,0 +1,15 @@
+{
+    "name": "Base",
+    "description": "Base 不需要发版，尽在node内被依赖",
+    "version": "0.1.0",
+    "dependencies": {
+        "gini": "*"
+    },
+    "rurl": {
+        "img": "assets/img",
+        "css": "assets/css",
+        "js": "assets/js",
+        "*": "assets"
+    }
+}
+

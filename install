@@ -1,0 +1,19 @@
+#/bin/bash
+
+CWD=$(pwd)
+CONTAINER="${1:-gini}"
+ENVFILE="${2:-default.env}"
+BASE=$(basename $CWD)
+REPOS=$(find * -maxdepth 0 -type d)
+
+for REPO in $REPOS
+do
+    DIR=$REPO
+    APP="$BASE/$DIR"
+    cp "$CWD/$ENVFILE" "$CWD/$REPO/.env"
+    docker exec -it $CONTAINER sh -lc "rm -rf $APP/cache"
+    docker exec -it $CONTAINER sh -lc 'gini @'$APP' install'
+    docker exec -it $CONTAINER sh -lc 'gini @'$APP' composer init -nf'
+    docker exec -it $CONTAINER sh -lc 'composer update -d '$APP' --no-dev'
+    docker exec -it $CONTAINER sh -lc "gini @$APP cache"
+done

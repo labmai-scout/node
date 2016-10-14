@@ -1,0 +1,6 @@
+---
+auto-run-bpm-process:
+  interval: '*/5 * * * *'
+  command: bpm robot work
+  comment: 每两分钟推进一次所有的instance进度
+...

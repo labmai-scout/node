@@ -1,0 +1,29 @@
+{
+    "auto-select-school": {
+        "callback": "\\Gini\\Controller\\CLI\\BPM\\Node\\Callback::autoselectschool",
+        "switch": {
+            "unapproved": "reject",
+            "approved": "pass"
+        },
+        "switch-preg": {
+            "/^school\\-\\d+$/": "SYSTEM-AUTO-SCHOOL"
+        }
+    },
+    "SYSTEM-AUTO-SCHOOL": {
+        "approved": "baoweichu",
+        "unapproved": "reject"
+    },
+    "baoweichu": {
+        "group": "baoweichu",
+        "group-title": "保卫处",
+        "group-description": "保卫处",
+        "approved": "pass",
+        "unapproved": "reject"
+    },
+    "reject": {
+        "callback": "\\Gini\\Controller\\CLI\\BPM\\Node\\Callback::reject"
+    },
+    "pass": {
+        "callback": "\\Gini\\Controller\\CLI\\BPM\\Node\\Callback::pass"
+    }
+}

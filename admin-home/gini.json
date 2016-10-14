@@ -1,0 +1,22 @@
+{
+    "name": "管理首页",
+    "description": "管理首页",
+    "version": "0.1.8",
+    "dependencies": {
+        "admin-home": "*",
+        "gapper-auth-gateway": "*",
+        "node/base": "*"
+    },
+    "rurl": {
+        "img": "assets/img",
+        "css": "assets/css",
+        "js": "assets/js",
+        "*": "assets"
+    },
+    "composer": {
+        "require": {
+           "tecnickcom/tcpdf": "@stable",
+           "iamfat/wechat": "dev-master"
+        }
+    }
+}

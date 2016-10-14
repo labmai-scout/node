@@ -1,0 +1,9 @@
+---
+rpc:
+    url: ${GAPPER_API}
+    client_id: ${ADMIN_CHEMICAL_LIMITS_GAPPER_ID}
+    client_secret: ${ADMIN_CHEMICAL_LIMITS_GAPPER_SECRET}
+
+server_home: ${GAPPER_HOME}
+home_app_client: ${GAPPER_HOME_APP_CLIENT}
+...

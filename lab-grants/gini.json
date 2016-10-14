@@ -1,0 +1,12 @@
+{
+    "name": "经费管理",
+    "description": "经费管理",
+    "version": "0.1.1",
+    "dependencies": {
+        "gini": "*",
+        "debade": "*",
+        "lab-grants": "*",
+        "gapper-auth-gateway": "*",
+        "node/base": "*"
+    }
+}

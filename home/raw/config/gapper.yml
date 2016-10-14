@@ -1,0 +1,9 @@
+---
+rpc:
+  url: ${GAPPER_API}
+  client_id: ${HOME_GAPPER_ID}
+  client_secret: ${HOME_GAPPER_SECRET}
+
+server_home: ${GAPPER_HOME}
+...
+

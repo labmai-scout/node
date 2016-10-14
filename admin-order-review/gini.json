@@ -1,0 +1,22 @@
+{
+    "name": "订单审批",
+    "description": "订单审批",
+    "version": "0.1.4",
+    "dependencies": {
+        "admin-order-review": "*",
+        "gapper-auth-gateway": "*",
+        "node/base": "*"
+    },
+    "rurl": {
+        "img": "assets/img",
+        "css": "assets/css",
+        "js": "assets/js",
+        "*": "assets"
+    },
+    "composer": {
+        "require": {
+            "michelf/php-markdown": "@stable"
+        }
+    }
+}
+

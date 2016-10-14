@@ -1,0 +1,17 @@
+{
+    "name": "废液桶管理",
+    "description": "废液桶管理",
+    "version": "0.1.1",
+    "dependencies": {
+        "admin-waste": "*",
+        "gapper-auth-gateway": "*",
+        "node/base": "*"
+    },
+    "rurl": {
+        "img": "assets/img",
+        "css": "assets/css",
+        "js": "assets/js",
+        "*": "assets"
+    }
+}
+

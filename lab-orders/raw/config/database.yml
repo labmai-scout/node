@@ -1,0 +1,4 @@
+default:
+  dsn: mysql:dbname=${DB_PREFIX}_lab_orders;host=${DB_HOST};port=${DB_PORT}
+  username: ${DB_USER}
+  password: ${DB_PASS}

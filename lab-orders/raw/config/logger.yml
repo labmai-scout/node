@@ -1,0 +1,5 @@
+---
+default:
+  SysLog:
+    level: error
+...

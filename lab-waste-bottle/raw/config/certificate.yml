@@ -1,0 +1,4 @@
+export:
+  url: certificate/export/
+  title: '废瓶凭证单'
+goto: ${LAB_WASTE_BOTTLE_CERT_GOTO}

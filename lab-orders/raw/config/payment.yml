@@ -1,0 +1,17 @@
+---
+method:
+  demo-local:
+    title: 本地支付
+    frontend: payment-statement-normal-handler
+    backend: \Gini\Payment\Normal\Local
+    print: payment/demo/export/
+  demo-offline:
+    title: 线下支付
+    frontend: payment-statement-normal-handler
+    backend: \Gini\Payment\Normal\Offline
+    print: payment/demo/export/
+local:
+  - demo-local
+remote:
+  - demo-offline
+...

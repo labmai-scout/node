@@ -1,0 +1,14 @@
+---
+title: ${ADMIN_APP_TITLE}
+node: ${MALL_NODE}
+debade_secret: ${DEBADE_SECRET}
+rpc:
+  gateway:
+    url: ${GATEWAY_API}
+    client_id: ${GATEWAY_CLIENT_ID}
+    client_secret: ${GATEWAY_CLIENT_SECRET}
+  unitconv:
+    url: ${UNITCONV_API}
+  chemdb:
+    url: ${CHEMDB_API}
+...

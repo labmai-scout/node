@@ -1,0 +1,7 @@
+---
+rpc:
+  url: ${TAGDB_API}
+client:
+  id: ${ADMIN_CHEMICAL_LIMITS_GAPPER_ID}
+  secret: ${ADMIN_CHEMICAL_LIMITS_GAPPER_SECRET}
+...

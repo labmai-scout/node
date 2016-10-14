@@ -1,0 +1,121 @@
+@dashboardBoardColor: #666;
+@hoverDashboardBoardBackgroundColor: #eee;
+@hoverDashboardBoardColor: #333;
+
+body.layout-payment-statement-pay {
+    .pay-error {
+        margin: 50px 100px;
+        width: 350px;
+
+        hr.wide {
+            border-color: #ccc;
+        }
+        .description {
+            color: #ccc;
+        }
+    }
+
+    .pay-callback {
+        margin: 50px 100px;
+        width: 350px;
+
+        hr.wide {
+            border-color: #ccc;
+        }
+    }
+}
+
+.add-member-icon {
+    width: 128px;
+    height: 128px;
+    padding: 20px;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: @dashboardBoardColor;
+    cursor: pointer;
+
+    .add-member-icon-image {
+        display:block;
+        width: 70px;
+        height: 70px;
+        margin:0 auto;
+        border-radius:50%;
+        text-align:center;
+        background-color:#fff;
+        position: relative;
+
+        .add-member-icon-text {
+            position: absolute;
+            border: 3px solid #ddd;
+            color: #fff;
+            background-color: #aaa;
+            width: 70px;
+            height: 70px;
+            line-height: 64px;
+            font-size: 40px;
+            font-weight: bold;
+            border-radius:50%;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        img {
+            display:block;
+            width: 70px;
+            height: 70px;
+            border-radius:50%;
+            border: 2px solid #666;
+        }
+        
+    }
+
+    .add-member-icon-title {
+        display:block;
+        margin:5px 0 10px;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+
+}
+
+.add-member-icon-hoverable {
+    cursor: pointer;
+    &:hover {
+        background-color: @hoverDashboardBoardBackgroundColor;
+        color: @hoverDashboardBoardColor;
+
+        .add-member-icon-text {
+            border-color: #ccc;
+        }
+    }
+}
+
+.add-ntu-member {
+    &-handler {
+        cursor: pointer;
+    }
+    &-modal {
+        width: 300px;
+    }
+}
+
+
+a.welcome-button {
+    text-decoration: none;
+    color: #366cc4;
+    display: block;
+    padding: 60px 20px;
+    
+    &:hover {
+        color: #fff;
+        background-color: #366cc4;
+    }
+    
+    i {
+        margin-bottom: 10px;
+    }
+}
