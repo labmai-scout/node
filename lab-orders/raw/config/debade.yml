@@ -3,6 +3,6 @@ queues:
   order:
     driver: Courier
     options: 
-      dsn: 'tcp://172.17.0.1:3333'
+      dsn: 'tcp://{{{DOCKER0IP}}}:3333'
       queue: 'mall'
 ...
